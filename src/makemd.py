@@ -2,15 +2,29 @@ import os
 import requests
 from datetime import datetime, date
 
-pathtoplugins = "myplugins/"
-indexfile = "README.md"
-assetfiles = "https://github.com/zuckung/endless-sky-plugins/releases/download/Latest/"
-pluginurl = "https://github.com/zuckung/endless-sky-plugins/tree/main/myplugins/"
-header = "src/header.file"
+os.chdir("Download/mgit/test/")
+
+# read paths and files
+with open("res/paths.txt") as f:
+    for line in f:
+        line = str((line.strip()))
+        if line.find("pathtoplugins") == 0:
+            pathtoplugins = line.split(" = ")[1]
+        elif line.find("indexfile") == 0:
+            indexfile = line.split(" = ")[1]
+        elif line.find("assetfiles") == 0:
+            assetfiles = line.split(" = ")[1]
+        elif line.find("pluginurl") == 0:
+            pluginurl = line.split(" = ")[1]
+        elif line.find("header") == 0:
+            headerfile = line.split(" = ")[1]
+        elif line.find("picturefile") == 0:
+            picturefile = line.split(" = ")[1]
 
 # write header
-file2 = open(header, "r")
+file2 = open(headerfile, "r")
 header = file2.readlines()
+header = header.replace("" , picturefile)
 file2.close
 file1 = open(indexfile, "w")
 file1.writelines(header)
