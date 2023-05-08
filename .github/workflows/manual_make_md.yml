@@ -17,8 +17,7 @@ jobs:
           git config user.name "zuckung" 
           git config user.email "zuckung@gmx.de"
           git add -A
-          git diff-index --quiet main
-          git commit -m "README.md updated"
+          git diff-index --quiet HEAD || git commit -m "README.md updated"
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
