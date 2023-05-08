@@ -8,7 +8,7 @@ Please excuse bad english, spelling, grammar, etc... english isn't my mother ton
 
 
 ### additional.command.buttons
-[additional.command.buttons.zip](https://github.com/zuckung/test/releases/download/Latest/additional.command.buttons.zip) | 54.31 kb | last modified: 2023-05-08
+[additional.command.buttons.zip](https://github.com/zuckung/test/releases/download/Latest/additional.command.buttons.zip) | 54.6 kb | last modified: 2023-05-08
  | [view files](https://github.com/zuckung/test/tree/main/myplugins/additional.command.buttons/) <br>
 (interface changed)(made for 0.10.0)
 
