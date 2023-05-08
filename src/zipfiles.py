@@ -71,7 +71,7 @@ else:
 				os.chdir(pathtoplugins)
 				x = p.replace(" ", ".")
 				subprocess.run(["zip", "-r", "../" + x + ".zip", p], stdout=subprocess.DEVNULL)
-				for am in pathtopluginsdeepth:
+				for am in range(pathtopluginsdeepth):
 					os.chdir('../')
 		else:
 			print("No plugin changes have been detected.")
