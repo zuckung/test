@@ -1,4 +1,4 @@
-['[](res/icon.png)\n', '# **my endless-sky-plugins**\n', "I aim at developing small and modular plugins that don't break vanilla lore too much. <br><br>\n", "Please excuse bad english, spelling, grammar, etc... english isn't my mother tongue. Feel free to correct me. <br><br>\n", '\n', '\n', '## Plugin List:<br>\n', '\n', '\n']### additional.command.buttons
+['[](https://github.com/zuckung/test/blob/main/res/icon.png)\n', '# **my endless-sky-plugins**\n', "I aim at developing small and modular plugins that don't break vanilla lore too much. <br><br>\n", "Please excuse bad english, spelling, grammar, etc... english isn't my mother tongue. Feel free to correct me. <br><br>\n", '\n', '\n', '## Plugin List:<br>\n', '\n', '\n']### additional.command.buttons
 [additional.command.buttons.zip](https://github.com/zuckung/test/releases/download/Latest/additional.command.buttons.zip) | 54.31 kb | last modified: 2023-05-08
  | [view files](https://github.com/zuckung/test/tree/main/myplugins/additional.command.buttons/) <br>
 (interface changed)(made for 0.10.0)
