@@ -2,8 +2,6 @@ import os
 import requests
 from datetime import datetime, date
 
-os.chdir("Download/mgit/test/")
-
 # read paths and files
 with open("res/paths.txt") as f:
     for line in f:
