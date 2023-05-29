@@ -47,7 +47,7 @@ jobs:
               corrected = corrected.replace("..", ".") 
               if corrected[len(corrected)-1] == ".":
                 corrected = corrected[:len(corrected)-1]
-              subprocess.run(["zip", "-r", "../../" + corrected + ".zip", p],
+              subprocess.run(["zip", "-r", "../" + corrected + ".zip", p],
                 stdout=subprocess.DEVNULL)
               os.chdir('../')
           else:
