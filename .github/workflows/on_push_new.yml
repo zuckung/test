@@ -3,7 +3,7 @@ name: Zip Release Readme
 on:
   push:
     paths:
-      - 'Working/All Plugins/**'
+      - 'myplugins/**'
 jobs:
   zip-files:
     runs-on: ubuntu-latest
@@ -27,7 +27,7 @@ jobs:
             if not "All Plugins" in f:
               continue
             path = f.split(os.sep)
-            index = path.index("All Plugins") + 1
+            index = path.index("myplugins") + 1
             if index >= len(path):
               continue
             plugins.add(path[index])
@@ -35,7 +35,7 @@ jobs:
             print("The following plugins have changed:")
             for p in plugins:
               print(p)
-              os.chdir('Working/All Plugins/')
+              os.chdir('myplugins/')
               corrected = p.replace(" ", ".")
               corrected = corrected.replace("'", ".") 
               corrected = corrected.replace(",", ".") 
