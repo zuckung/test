@@ -23,7 +23,7 @@ jobs:
           import subprocess
           changed = "${{ steps.files.outputs.all_changed_and_modified_files }}"
           plugins = set()
-          for f in changed.split("%25%25%25"):
+          for f in changed.split("%%%"):
             if not "myplugins" in f:
               continue
             path = f.split(os.sep)
