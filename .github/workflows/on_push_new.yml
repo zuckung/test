@@ -24,7 +24,7 @@ jobs:
           changed = "${{ steps.files.outputs.all_changed_and_modified_files }}"
           plugins = set()
           for f in changed.split("%25%25%25"):
-            if not "All Plugins" in f:
+            if not "myplugins" in f:
               continue
             path = f.split(os.sep)
             index = path.index("myplugins") + 1
@@ -49,7 +49,7 @@ jobs:
                 corrected = corrected[:len(corrected)-1]
               subprocess.run(["zip", "-r", "../../" + corrected + ".zip", p],
                 stdout=subprocess.DEVNULL)
-              os.chdir('../../')
+              os.chdir('../')
           else:
             print("No plugin changes have been detected.")
         shell: python
